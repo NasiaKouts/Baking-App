@@ -7,6 +7,20 @@ Also, the widget created for the app dispays the ingredients of a selected recip
 
 There are two classes of testing, consist of 8 testings, checking core functionality of the app, for instance, if the recycler view works as expected and when an item is clicked opens the corresponding activity. Also if an activity gets and loads the corresponding info from an intent extras correctly.
 
+## Screenshots (on phone)
+
+<img src="https://github.com/NasiaKouts/Baking-App/blob/master/assets/recording.gif" width="280"> |
+<img src="https://github.com/NasiaKouts/Baking-App/blob/master/assets/mainMenu.png" width="280"> |
+<img src="https://github.com/NasiaKouts/Baking-App/blob/master/assets/recipeDetails.png" width="280"> | 
+<img src="https://github.com/NasiaKouts/Baking-App/blob/master/assets/ingredients.png" width="280"> |
+<img src="https://github.com/NasiaKouts/Baking-App/blob/master/assets/videoLoading.png" width="280"> |
+<img src="https://github.com/NasiaKouts/Baking-App/blob/master/assets/videoPlaying.png" width="280"> |
+<img src="https://github.com/NasiaKouts/Baking-App/blob/master/assets/costumizeWidget.png" width="280"> |
+<img src="https://github.com/NasiaKouts/Baking-App/blob/master/assets/widget.png" width="280"> 
+
+## Screenshots (on tablet)
+to be added
+
 ### Libraries used:
 - Butterknife
 - Exoplayer
