@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    /* In case the device the app is running on has larger screen width than 600dp it is considered tablet.
+     * Thus we set the isTablet to true, in order to check this value withing the RecipesActivity
+     * and decide how many columns the recycler view displaying the recipes should have.
+     */
+    <bool name="isTablet">true</bool>
+</resources>

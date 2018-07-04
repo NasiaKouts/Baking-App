@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/step_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/subtitle_height"
+    android:background="?android:attr/selectableItemBackground">
+
+    <View
+        android:id="@+id/color_box_step_item"
+        android:layout_width="@dimen/cv_radius"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:paddingLeft="@dimen/cv_radius"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_view_step_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingLeft="@dimen/vertical_margin_small"
+            android:textAllCaps="true"
+            android:textSize="@dimen/subtitle_size"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/regular_icon_size"
+            android:layout_height="@dimen/regular_icon_size"
+            android:src="@drawable/ic_chevron"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+</LinearLayout>

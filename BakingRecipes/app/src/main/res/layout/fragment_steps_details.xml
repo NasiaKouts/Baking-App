@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/media_layout_step_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/play_media_step_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:resize_mode="fit"
+            android:background="@android:color/black" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/video_thumbnail_details"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar_load_media_step_details"
+                android:layout_width="@dimen/media_sub_icon"
+                android:layout_height="@dimen/media_sub_icon"
+                android:scrollbarSize="1dp"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleSmall"
+                android:indeterminateDrawable="@drawable/multicolor_pb" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/media_connectivity_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image_view_refresh_media_step_details"
+                android:layout_width="@dimen/media_sub_icon"
+                android:layout_height="@dimen/media_sub_icon"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_refresh"
+                android:tint="@color/colorAccentGreatOpacity"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/error_connectivity"
+                android:textColor="@color/colorIconsOpacity" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <jp.shts.android.library.TriangleLabelView
+        android:id="@+id/corner_label"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_border_buttons"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundColor="@color/colorAccentSmallOpacity"
+        app:corner="rightBottom"
+        app:labelCenterPadding="50dp"
+        app:primaryTextColor="@color/colorIcons"
+        app:primaryTextSize="@dimen/subtitle_size" />
+
+    <LinearLayout
+        android:id="@+id/bottom_border_buttons"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/colorIcons"
+        android:paddingBottom="@dimen/vertical_margin_small"
+        android:paddingTop="@dimen/vertical_margin_small">
+
+            <LinearLayout
+                android:background="?attr/selectableItemBackground"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:id="@+id/previous_step_details_linear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/regular_icon_size"
+                    android:layout_height="@dimen/regular_icon_size"
+                    android:tint="@color/colorSecondaryText"
+                    android:src="@drawable/ic_arrow_up"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/previous_step"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorDivider"
+                android:layout_marginLeft="@dimen/vertical_margin_small"
+                android:layout_marginRight="@dimen/vertical_margin_small" />
+
+            <LinearLayout
+                android:background="?attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:id="@+id/next_step_details_linear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/next_step"
+                    android:minWidth="100dp"
+                    android:layout_gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/regular_icon_size"
+                    android:layout_height="@dimen/regular_icon_size"
+                    android:tint="@color/colorSecondaryText"
+                    android:src="@drawable/ic_arrow_down" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/media_layout_step_details"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/text_view_description_step_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/horizontal_margin_medium" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

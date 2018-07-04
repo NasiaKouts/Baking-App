@@ -1,0 +1,54 @@
+<resources>
+    <!-- \u0020 is the unicode for space
+         \u2022 is the unicode for bullet symbol -->
+    <string name="app_name">BakingRecipes</string>
+
+    // AppBar Titles
+    <string name="ingredients_activity_title">\u0020Ingredients</string>
+    <string name="step_details_activity_title">\u0020Step\u0020</string>
+
+    // Save Instances
+    <string name="recycler_view_pos">recyclerViewPos</string>
+    <string name="isAFragmentOpen">openFragment</string>
+    <string name="isIngredientsFragmentOpen">openIngFragment</string>
+    <string name="isStepDetailsOpen">openStepFragment</string>
+    <string name="openedStepIndex">openedStep</string>
+    <string name="playback_pos">playbackPos</string>
+    <string name="step_index">stepIndex</string>
+
+    // Main Activity - RecipeActivity
+    <string name="json_error">An Error Occurred</string>
+    <string name="servings_label">servings</string>
+    <string name="recipe_key">Recipe</string>
+
+    // RecipeStepsFragment
+    <string name="ingredientsList">Ingredients</string>
+    <string name="steps">Steps</string>
+    <string name="selected_step_bundle_key">SelectedStep</string>
+
+    // Fragments Two Pane
+    <string name="ingredients_tag">IngTag</string>
+    <string name="step_details_tag">StepTag</string>
+
+    // Error Messages
+    <string name="error_media_player">Media Player Error Occurred</string>
+    <string name="error_connectivity">ConnectivityError</string>
+    <string name="audio_focus_denied">Audio Focus Request Denied</string>
+
+    // Step Details
+    <string name="previous_step">Previous Step</string>
+    <string name="next_step">Next Step</string>
+    <string name="no_video">No Video Available</string>
+
+    <string name="bullet">\u2022\u0020</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="widget_title">Select recipe</string>
+    <string name="widget_explanation">It\'s ingredients will appear on the widget</string>
+    <string name="state_key">State</string>
+
+    // Testing
+    <string name="recipe_opened">Nutella Pie</string>
+    <string name="unknownRecipe">Unknown Recipe</string>
+
+</resources>
