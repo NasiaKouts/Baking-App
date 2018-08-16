@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/jbeguna04/Baking-App/master/logodesign/logotype1.1brown.png"></p>
+
 # Baking Recipes
 This app has been created during a Google Scholarhip of Android Developer Nanodegree Program on Udacity. It is the third app we created, and the main purpose is to get familiar with fragments, testing and creating widgets. As data, there is a json file in assets' folder that is being used.
 
